@@ -33,13 +33,18 @@ Previously, it was originally updated/modified by CustomKBD to incorporate an en
 */
 #define MATRIX_ROW_PINS { C6, D7, E6, B4, B5 }
 #define MATRIX_COL_PINS { B1, B3, B2, B6 }
+#define OLED_DISPLAY_ADDRESS 0x3D
 
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW
 
 /* Underlight configuration */
-#define RGB_DI_PIN F4
+#define WS2812_DI_PIN F4
 #define RGBLED_NUM 9
+#define RGBLIGHT_DEFAULT_HUE 191
+#define RGBLIGHT_DEFAULT_SAT 255
+#define RGBLIGHT_DEFAULT_VAL 255
+#define RGBLIGHT_DEFAULT_MODE RGBLIGHT_MODE_STATIC_LIGHT
 #define RGBLIGHT_EFFECT_BREATHING
 #define RGBLIGHT_EFFECT_RAINBOW_MOOD
 #define RGBLIGHT_EFFECT_RAINBOW_SWIRL
