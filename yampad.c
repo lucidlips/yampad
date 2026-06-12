@@ -1,4 +1,5 @@
-/* Copyright 2023
+
+/* Copyright 2019
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -12,10 +13,8 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- * The qmk firmware files has been updated by That's So Mo (16/04/2023) for the new qmk firmware structure.
- * Previously, it was originally updated/modified by CustomKBD to incorporate an encoder - The Yampad V2.
  */
-#include "yampad.h"
+#include "quantum.h"
 
 #if defined(OLED_ENABLE)
 oled_rotation_t oled_init_kb(oled_rotation_t rotation) {

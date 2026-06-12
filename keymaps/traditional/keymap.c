@@ -1,6 +1,6 @@
 /* MIT License
 
-Copyright (c) 2019 Mattia Dal Ben
+Copyright (c) 2020 Richard Davey (Daveyr)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -28,13 +28,13 @@ SOFTWARE.
 // Layer names don't all need to be of the same length, obviously, and you can also skip them
 // entirely and just use numbers.
 enum layers {
-    _BL,
-    _NV,
-    _FN
+  _BL = 0,
+  _NV,
+  _FN
 };
 
 enum custom_keycodes {
-    KC_DBL0 = SAFE_RANGE,
+  KC_DBL0 = SAFE_RANGE,
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -61,23 +61,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* Keymap _NV: Navigation layer
  * ,-------------------.
- * |INS |HOME|PGUP|    |
+ * |INS |BSPC|    |    |
  * |----|----|----|----|
- * |DEL |END |PGDN|    |
+ * |HOME| UP |PGUP|    |
+ * |----|----|----|    |
+ * |LEFT|DEL |RGHT|    |
+ * |----|----|----|----|
+ * |END |DOWN|PGDN|    |
  * |----|----|----|    |
  * |    |    |    |    |
- * |----|----|----|----|
- * |    | UP |    |    |
- * |----|----|----|    |
- * |LEFT|DOWN|RIGH|    |
  * `-------------------'
  */
   [_NV] = LAYOUT(
-    KC_INS,   KC_HOME,  KC_PGUP,   TG(_NV),
-    KC_DEL,   KC_END,   KC_PGDN,
-    XXXXXXX,  XXXXXXX,  XXXXXXX,   XXXXXXX,
-    XXXXXXX,  KC_UP,    XXXXXXX,
-    KC_LEFT,  KC_DOWN,  KC_RGHT,   XXXXXXX
+    KC_INS,   KC_BSPC, XXXXXXX,   TG(_NV),
+    KC_HOME,  KC_UP,   KC_PGUP,
+    KC_LEFT,  KC_DEL,  KC_RGHT,   XXXXXXX,
+    KC_END,   KC_DOWN, KC_PGDN,
+    XXXXXXX,  XXXXXXX, XXXXXXX,   XXXXXXX
   ),
 
 /* Keymap _FN: RGB Function Layer
@@ -98,7 +98,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     RGB_HUD,  RGB_HUI,  XXXXXXX,
     RGB_SAD,  RGB_SAI,  XXXXXXX,   XXXXXXX,
     RGB_VAD,  RGB_VAI,  XXXXXXX,
-    QK_BOOT,    XXXXXXX,  XXXXXXX,   XXXXXXX
+    QK_BOOT,  XXXXXXX,  XXXXXXX,   XXXXXXX
   ),
 };
 
