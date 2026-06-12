@@ -33,7 +33,7 @@ Previously, it was originally updated/modified by CustomKBD to incorporate an en
 */
 #define MATRIX_ROW_PINS { C6, D7, E6, B4, B5 }
 #define MATRIX_COL_PINS { B1, B3, B2, B6 }
-#define OLED_DISPLAY_ADDRESS 0x3D
+#define OLED_DISPLAY_ADDRESS 0x3C
 
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW
