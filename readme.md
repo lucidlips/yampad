@@ -4,9 +4,9 @@
 
 The Yampad project is an open-source, QMK (Quantum Mechanical Keyboard Firmware) powered, hot-swappable, RGB-backlighted, OLED featured, mechanical numpad. This repository will be used to share information about the project and instruction on how to use and assemble the Yampad.
 
-* Keyboard Maintainer: [mattdibi](https://github.com/mattdibi)
-* Hardware Supported: Pro Micro, (ATmega32u4)
-* Hardware Availability: https://github.com/mattdibi/yampad
+- Keyboard Maintainer: [mattdibi](https://github.com/mattdibi)
+- Hardware Supported: Pro Micro, (ATmega32u4)
+- Hardware Availability: https://github.com/mattdibi/yampad
 
 Make example for this keyboard (after setting up your build environment):
 
